@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Indigo / Violet glowing horizon curving accent */
+.vetra-horizon-glow {
+  position: absolute;
+  top: 480px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140vw;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(95, 93, 245, 0.15) 0%, rgba(122, 120, 250, 0.05) 50%, rgba(0, 0, 0, 0) 75%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 12;
+}
+
+.vetra-horizon-arc {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120vw;
+  height: 400px;
+  border-radius: 50%;
+  border-top: 1.5px solid rgba(95, 93, 245, 0.35);
+  pointer-events: none;
+  z-index: 13;
+  box-shadow: 0 -15px 50px rgba(95, 93, 245, 0.15);
+  background: radial-gradient(ellipse at top, rgba(95, 93, 245, 0.03) 0%, rgba(0,0,0,0) 60%);
+}
+
+/* Scrollbar styling for smooth tech look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

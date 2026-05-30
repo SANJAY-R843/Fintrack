@@ -1,0 +1,6 @@
+{
+  "name": "FinTrack",
+  "description": "FinTrack is a premium personal finance manager landing page designed for beautiful expense tracking, budget management, and investment tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
